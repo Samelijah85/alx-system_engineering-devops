@@ -1,2 +1,2 @@
 #!/bin/bash
-6-multiple_permissions
+chmod u+x,g+x,o+r hello
