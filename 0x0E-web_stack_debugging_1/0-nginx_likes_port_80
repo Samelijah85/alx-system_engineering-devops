@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Configures an Nginx server to listen on port 80 of all the server’s active IPv4 IPs.
+rm /etc/nginx/sites-enabled/default
+ln /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
+# Restart Nginx
+service nginx restart
