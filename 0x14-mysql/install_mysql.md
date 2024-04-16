@@ -20,6 +20,7 @@ If encountering a signature verification error, import the missing GPG key:
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
 ```
 (Replace this "467B942D3A79BD29" with your recv keys that will be display alongside with the error message)
+
 5. Update APT again:
 ``` bash
 sudo apt update
