@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
 # Restarts gunicorn service gracefully
 
-# Check if Gunicorn process is running
-if pgrep -x "gunicorn" > /dev/null; then
-    echo "Reloading Gunicorn gracefully..."
-    kill -HUP "$(pgrep -f "gunicorn")"
-    echo "Gunicorn reloaded successfully."
-else
-    echo "Gunicorn is not running."
-fi
+kill -HUP "$(pgrep -f "gunicorn")"
